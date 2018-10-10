@@ -1,2 +1,6 @@
 # practical machin learning final project
-The goal of your project is to predict the manner in which they did the exercise. This is the "classe" variable in the training set. You may use any of the other variables to predict with. You should create a report describing how you built your model, how you used cross validation, what you think the expected out of sample error is, and why you made the choices you did. You will also use your prediction model to predict 20 different test cases.
+Firstly, I observe that there are many Nas in both pml-training.csv and pml-testing.csv. So I remove some NearZerovariables. However, there are also some variables which contain many NAs, I use for loop to clean them. Then I get appropriate training set and test set.
+
+Next, I use three different models to predict training set. And I also make figures for them. By comparing accuracy of these models, I decide to use randomForest.
+
+Finally, I apply my machine learning algorithm to the 20 test cases.
